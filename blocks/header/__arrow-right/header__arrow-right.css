@@ -1,0 +1,11 @@
+.header__arrow-right {
+  background: none;
+  border: none;
+  background-image: url("../../../images/icon/arrow-header.svg");
+  transform: rotate(180deg);
+  background-repeat: no-repeat;
+  align-self: center;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.card__badge_type_shooter {
+  color: #7F56D9;
+  background-color: #F9F5FF;
+}
+
+.card__badge_type_shooter::before {
+  content: '';
+  display: block;
+  align-self: center;
+  margin-right: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #7F56D9;
+}

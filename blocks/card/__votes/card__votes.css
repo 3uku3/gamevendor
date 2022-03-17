@@ -1,0 +1,9 @@
+.card__votes {
+  color: #475467;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: .6;
+  margin: 0;
+  align-self: center;
+}

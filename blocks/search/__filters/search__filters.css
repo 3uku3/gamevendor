@@ -1,0 +1,15 @@
+.search__filters {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 0 20px;
+  padding: 0;
+}
+
+@media (min-width: 700px) {
+  .search__filters {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 16px;
+  }
+}

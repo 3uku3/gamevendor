@@ -1,0 +1,15 @@
+.card__badge_type_card-game {
+  color: #039855;
+  background-color: #ECFDF3;
+}
+
+.card__badge_type_card-game::before {
+  content: '';
+  display: block;
+  align-self: center;
+  margin-right: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #039855;
+}

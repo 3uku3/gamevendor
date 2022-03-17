@@ -1,0 +1,11 @@
+.search__close {
+  padding: 0;
+  border: none;
+  margin-left: 8px;
+  cursor: pointer;
+  background-image: url('../../../images/icon/close.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  align-self: center;
+}

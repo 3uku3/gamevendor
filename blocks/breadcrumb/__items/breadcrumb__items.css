@@ -1,0 +1,7 @@
+.breadcrumb__items {
+  display: flex;
+  list-style: none;
+  justify-content: left;
+  padding: 0;
+  margin-left: 20px;
+}

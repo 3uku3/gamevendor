@@ -1,0 +1,15 @@
+.card__badge_type_action-rpg {
+  color: #0086C9;
+  background-color: #F0F9FF;
+}
+
+.card__badge_type_action-rpg::before {
+  content: '';
+  display: block;
+  align-self: center;
+  margin-right: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #0086C9;
+}

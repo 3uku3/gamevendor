@@ -1,0 +1,14 @@
+.form-subscribe__input {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0;
+  align-self: end;
+}
+
+@media (min-width: 700px) {
+  .form-subscribe__input {
+    flex-direction: row;
+  }
+}

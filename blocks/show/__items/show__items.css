@@ -1,0 +1,24 @@
+.show__items {
+  display: none;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #FFF;
+  margin: 32px 24px 60px;
+  max-width: 1216px;
+  border-radius: 12px;
+}
+
+@media (min-width: 700px) {
+  .show__items {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .show__items {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+}

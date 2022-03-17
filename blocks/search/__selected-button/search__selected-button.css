@@ -1,0 +1,12 @@
+.search__selected-button {
+  display: flex;
+  color: #7F56D9;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  background: #F4EBFF;
+  margin-right: 8px;
+  padding: 10px;
+  white-space: nowrap;
+  border-radius: 8px;
+}

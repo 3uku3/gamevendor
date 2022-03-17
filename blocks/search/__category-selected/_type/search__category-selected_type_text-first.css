@@ -1,0 +1,9 @@
+.search__category-selected_type_text-first {
+  display: none;
+}
+
+@media (min-width: 1220px) {
+  .search__category-selected_type_text-first {
+    display: block;
+  }
+}

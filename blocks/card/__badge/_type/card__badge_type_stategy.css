@@ -1,0 +1,15 @@
+.card__badge_type_strategy {
+  color: #57534E;
+  background-color: #F6F6EA;
+}
+
+.card__badge_type_strategy::before {
+  content: '';
+  display: block;
+  align-self: center;
+  margin-right: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #57534E;
+}

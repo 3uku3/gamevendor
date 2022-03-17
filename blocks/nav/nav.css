@@ -1,0 +1,15 @@
+.nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  position: fixed;
+  bottom: 0;
+  height: 66px;
+  width: 100%;
+  background-color: #FFF;
+}
+
+@media (min-width: 770px) {
+  .nav {
+    display: none;
+  }
+}

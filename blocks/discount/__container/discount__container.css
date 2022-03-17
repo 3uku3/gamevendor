@@ -1,0 +1,38 @@
+.discount__container {
+  margin: 0 20px 32px;
+  background-image: url("../../../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 16px;
+  min-height: 448px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+@media (min-width: 700px) {
+  .discount__container {
+    background-image: url("../../../images/banner-m.jpg");
+    background-size: 100% 100%;
+    margin: 0 24px 40px;
+    min-height: 324px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .discount__container {
+    background-image: url("../../../images/banner-l.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 364px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .discount__container {
+    background-image: url("../../../images/banner-l.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 408px;
+  }
+}

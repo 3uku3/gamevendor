@@ -1,0 +1,10 @@
+.show__item {
+  display: flex;
+  align-items: center;
+  color: #98A2B3;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 8px 0 0;
+}

@@ -1,0 +1,30 @@
+.cards {
+  display: grid;
+  grid-template-columns: 280px;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 16px;
+  margin: 0 20px;
+  justify-content: center;
+}
+
+@media (min-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px
+  }
+}
+
+@media (min-width: 1000px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px
+  }
+}
+
+@media (min-width: 1300px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px
+  }
+}

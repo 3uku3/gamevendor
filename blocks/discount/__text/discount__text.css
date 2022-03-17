@@ -1,0 +1,29 @@
+.discount__text {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 auto 0;
+  max-width: 216px;
+}
+
+@media (min-width:700px) {
+  .discount__text {
+    max-width: 280px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width:1000px) {
+  .discount__text {
+    max-width: 315px;
+    margin-left: 60px;
+  }
+}
+
+@media (min-width:1200px) {
+  .discount__text {
+    max-width: 312px;
+    margin-left: 72px;
+  }
+}

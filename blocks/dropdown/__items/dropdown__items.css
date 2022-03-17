@@ -1,0 +1,11 @@
+.dropdown__items {
+  position: absolute;
+  top: 100%;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  flex-direction: column;
+  width: 100%;
+  transition: visibility .3s, opacity .3s linear;
+  z-index: 3;
+}

@@ -1,0 +1,14 @@
+.faq__button {
+  color: #101828;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  background-color: inherit;
+  border: none;
+  padding: 24px 0;
+  text-align: left;
+  background-image: url('../../../images/icon/plus.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 100%;
+}

@@ -1,0 +1,16 @@
+.faq__title {
+  color: #101828;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0 0 16px;
+}
+
+@media (min-width: 700px) {
+  .faq__title {
+    font-size: 32px;
+    font-weight: 38px;
+    text-align: center;
+    margin: 0 0 20px;
+  }
+}

@@ -1,0 +1,10 @@
+.header__arrow-left {
+  background: none;
+  border: none;
+  background-image: url("../../../images/icon/arrow-header.svg");
+  background-repeat: no-repeat;
+  align-self: center;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}

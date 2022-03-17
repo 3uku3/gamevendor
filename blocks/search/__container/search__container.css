@@ -1,0 +1,15 @@
+.search__container {
+  display: none;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.search__container:first-of-type {
+  display: flex;
+}
+
+@media (min-width: 700px) {
+  .search__container {
+    display: flex;
+  }
+}

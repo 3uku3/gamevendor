@@ -1,0 +1,30 @@
+.discount__button {
+  font-family: 'Inter', 'Arial', sans-serif;
+  background-color: #FFF;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  margin: auto auto 32px;
+  padding: 10px;
+  text-align: center;
+  width: 216px;
+  height: 44px;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .discount__button {
+    margin: 32px 32px 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .discount__button {
+    margin: 32px 0 60px 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .discount__button {
+    margin: 32px 0 72px 72px;
+  }
+}

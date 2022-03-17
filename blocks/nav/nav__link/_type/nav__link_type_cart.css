@@ -1,0 +1,5 @@
+.nav__link_type_cart {
+  background-image: url("../../../../images/icon/cart.svg");
+  background-repeat: no-repeat;
+  background-position: center 14px;
+}
