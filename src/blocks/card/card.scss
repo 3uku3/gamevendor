@@ -1,0 +1,203 @@
+%tpldot {
+  content: '';
+  display: block;
+  align-self: center;
+  margin-right: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.card {
+  background-color: #FFF;
+  padding: 12px 12px 20px;
+  margin: 0;
+  border-radius: 12px;
+  &__description {
+    color: #98A2B3;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  &__image {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+  }
+  &__link {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+  &__new-price {
+    color: #101828;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+  }
+  &__old-price {
+    display: none;
+    color: #D0D5DD;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0 8px 0 0;
+    text-decoration: line-through;
+    &_active {
+      display: block;
+    }
+  }
+  &__price {
+    display: flex;
+    border-top: 1px solid #EAECF0;
+    padding-top: 16px;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+  &__price-container {
+    display: flex;
+  }
+  &__sale {
+    display: none;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    margin: 0;
+    padding: 4px;
+    background-color: #669F2A;
+    border-radius: 4px;
+    &_active {
+      display: block;
+    }
+  }
+  &__stars {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  &__title {
+    color: #101828;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  &__votes {
+    color: #475467;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: .6;
+    margin: 0;
+    align-self: center;
+  }
+}
+
+.card__badge {
+  display: flex;
+  width: max-content;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin: 20px 0 12px;
+  &_type_action-rpg {
+    color: #0086C9;
+    background-color: #F0F9FF;
+    &::before {
+      @extend %tpldot;
+      background-color: #0086C9;
+    }
+  }
+  &_type_action {
+    color: #DC6803;
+    background-color: #FFFAEB;
+    &::before {
+      @extend %tpldot;
+      background-color: #DC6803;
+    }
+  }
+  &_type_card-game {
+    color: #039855;
+    background-color: #ECFDF3;
+    &::before {
+      @extend %tpldot;
+      background-color: #039855;
+    }
+  }
+  &_type_multiplayer-rpg {
+    color: #E31B53;
+    background-color: #FFF1F3;
+    &::before {
+      @extend %tpldot;
+      background-color: #E31B53;
+    }
+  }
+  &_type_shooter {
+    color: #7F56D9;
+    background-color: #F9F5FF;
+    &::before {
+      @extend %tpldot;
+      background-color: #7F56D9;
+    }
+  }
+  &_type_strategy {
+    color: #57534E;
+    background-color: #F6F6EA;
+    &::before {
+      @extend %tpldot;
+      background-color: #57534E;
+    }
+  }
+}
+
+.card__close {
+  display: none;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 36px;
+  height: 36px;
+  background-color: #D92D20;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-image: url("../images/icon/card-close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  &:hover {
+    background-color: #B32318;
+  }
+  &_opened {
+    display: block;
+  }
+  &_active {
+    background-image: url("../images/icon/card-active.svg");
+  }
+}
+
+.card__star {
+  width: 12px;
+  height: 11px;
+  margin-right: 4px;
+  align-self: center;
+  background-image: url("../images/icon/star.svg");
+  &:last-of-type {
+    margin-right: 8px;
+  }
+  &_type_active {
+    background-image: url("../images/icon/star-active.svg");
+  }
+  &_type_half {
+    background-image: url("../images/icon/star-half.svg");
+  }
+}

@@ -1,9 +1,0 @@
-.search__category-selected_type_text-second {
-  display: none;
-}
-
-@media (min-width: 1000px) {
-  .search__category-selected_type_text-second {
-    display: block;
-  }
-}

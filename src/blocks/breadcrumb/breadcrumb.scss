@@ -1,0 +1,27 @@
+.breadcrumb {
+  &__items {
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    padding: 0;
+    margin-left: 20px;
+  }
+  &__item {
+    text-decoration: none;
+    color: #D0D5DD;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__item-link {
+    text-decoration: none;
+    color: #667085;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    &::after {
+      content: url('../images/icon/arrow-breadcrumb.svg');
+      padding: 8px 8px 0;
+    }
+  }
+}

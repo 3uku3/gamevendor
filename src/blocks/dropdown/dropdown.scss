@@ -1,0 +1,26 @@
+.dropdown {
+  position: relative;
+  &__items {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: visibility .3s, opacity .3s linear;
+    z-index: 3;
+    &_opened {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__item {
+    font-family: inherit;
+    background-color: #FFF;
+    border: 1px solid #D0D5DD;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}

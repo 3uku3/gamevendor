@@ -1,0 +1,140 @@
+.discount {
+  &__title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 32px auto 16px;
+    text-align: left;
+    width: 216px;
+  }
+  @media (min-width: 700px) {
+    .discount__title {
+      font-size: 32px;
+      line-height: 38px;
+      width: 280px;
+      margin: 40px 40px 20px;
+    }
+  }
+  @media (min-width: 1000px) {
+    .discount__title {
+      font-size: 40px;
+      font-weight: 44px;
+      max-width: 315;
+      margin: 60px 0 28px 60px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .discount__title {
+      margin: 72px 0 28px 72px;
+    }
+  }
+  &__text {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 auto 0;
+    max-width: 216px;
+  }
+  @media (min-width:700px) {
+    .discount__text {
+      max-width: 280px;
+      margin-left: 40px;
+    }
+  }
+  @media (min-width:1000px) {
+    .discount__text {
+      max-width: 315px;
+      margin-left: 60px;
+    }
+  }
+  @media (min-width:1200px) {
+    .discount__text {
+      max-width: 312px;
+      margin-left: 72px;
+    }
+  }
+  &__image {
+    display: none;
+    position: absolute;
+    right: 36px;
+    bottom: 0;
+    width: 606px;
+    height: 420px;
+  }
+  @media (min-width: 1000px) {
+    .discount__image {
+      display: block;
+    }
+  }
+  @media (min-width: 1200px) {
+    .discount__image {
+      right: 98px;
+      width: 708px;
+      height: 478px;
+    }
+  }
+  &__container {
+    margin: 0 20px 32px;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 16px;
+    min-height: 448px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  @media (min-width: 700px) {
+    .discount__container {
+      background-image: url("../images/banner-m.jpg");
+      background-size: 100% 100%;
+      margin: 0 24px 40px;
+      min-height: 324px;
+    }
+  }
+  @media (min-width: 1000px) {
+    .discount__container {
+      background-image: url("../images/banner-l.jpg");
+      background-size: cover;
+      background-position: center center;
+      min-height: 364px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .discount__container {
+      background-image: url("../images/banner-l.jpg");
+      background-size: cover;
+      background-position: center center;
+      min-height: 408px;
+    }
+  }
+  &__button {
+    font-family: 'Inter', 'Arial', sans-serif;
+    background-color: #FFF;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    margin: auto auto 32px;
+    padding: 10px;
+    text-align: center;
+    width: 216px;
+    height: 44px;
+    cursor: pointer;
+  }
+  @media (min-width: 700px) {
+    .discount__button {
+      margin: 32px 32px 40px;
+    }
+  }
+  @media (min-width: 1000px) {
+    .discount__button {
+      margin: 32px 0 60px 60px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .discount__button {
+      margin: 32px 0 72px 72px;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.faq {
+  margin: 0 20px 80px;
+  &__button {
+    color: #101828;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    background-color: inherit;
+    border: none;
+    padding: 24px 0;
+    text-align: left;
+    background-image: url('../images/icon/plus.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 100%;
+    &_active {
+      background-image: url("../images/icon/minus.svg");
+    }
+  }
+  &__content {
+    display: none;
+    margin-bottom: 41px;
+    &_active {
+      display: block;
+    }
+  }
+  &__content-list {
+    padding-left: 18px;
+    margin-bottom: 30px;
+  }
+  &__items {
+    padding: 0;
+  }
+  &__item {
+    list-style: none;
+    border-bottom: 1px solid #EAECF0;
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+  &__item-list {
+    color: #7F56D9;
+    margin: 0 0 8px;
+    list-style-type: disc;
+  }
+  &__item-text {
+    color: #667085;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 20px;
+  }
+  &__item-title {
+    color: #101828;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0 0 16px;
+  }
+  &__title {
+    color: #101828;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0 0 16px;
+  }
+  &__subtitle {
+    color: #667085;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 20px;
+  }
+  @media (min-width: 700px) {
+    .faq__title {
+      font-size: 32px;
+      font-weight: 38px;
+      text-align: center;
+      margin: 0 0 20px;
+    }
+  }
+  @media (min-width: 700px) {
+    .faq__subtitle {
+      text-align: center;
+    }
+  }
+  &__text-list {
+    color: #667085;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+  }
+}

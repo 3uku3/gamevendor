@@ -1,0 +1,124 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: visibility .5s linear 0s, opacity .5s linear 0s;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, .5);
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    top: 195px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: calc(430px - (36px * 2));
+    padding: 34px 36px 37px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, .15);
+  }
+  &__close-button {
+    position: absolute;
+    right: -48px;
+    top: -40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    &:hover {
+      opacity: .6;
+    }
+  }
+  @media (max-width: 600px) {
+    .popup__close-button {
+      right: 0;
+    }
+  }
+  &__input-text {
+    font-family: 'Inter', 'Arial', sans-serif;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 13px 0;
+  }
+  &__radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  &__save-button {
+    background: #7F56D9;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0;
+    padding: 14px 0 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    &:hover {
+      background: rgba(0, 0, 0, .8);
+    }
+  }
+  @media (max-width: 600px) {
+    .popup__save-button {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+  &__opened {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__stars {
+    display: flex;
+    position: relative;
+    margin: 15px 0;
+  }
+  &__star {
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+    align-self: center;
+    background-image: url("../images/icon/star.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &:last-of-type {
+      margin-right: 8px;
+    }
+    &_type_active {
+      background-image: url("../images/icon/star-active.svg");
+    }
+    &_type_half {
+      background-image: url("../images/icon/star-half.svg");
+    }
+  }
+  &__rating-radio {
+    position: absolute;
+    display: flex;
+  }
+  &__rating-item {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  &__rating-label {
+    z-index: 3;
+    opacity: 0.3;
+    min-width: 13px;
+    height: 25px;
+    cursor: pointer;
+  }
+}

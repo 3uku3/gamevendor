@@ -1,0 +1,112 @@
+.show {
+  display: flex;
+  &__arrow-left {
+    background-color: #FFF;
+    background-image: url("../images/icon/arrow-breadcrumb.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(180deg);
+    border: none;
+    border-radius: 8px;
+    min-width: 36px;
+    min-height: 36px;
+    cursor: pointer;
+    &:hover {
+      background-color: #F9F5FF;
+    }
+    &_active {
+      background-image: url("../images/icon/arrow-search.svg");
+      transform: rotate(90deg);
+    }
+  }
+  &__arrow-right {
+    background-color: #FFF;
+    background-image: url("../images/icon/arrow-breadcrumb.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    border-radius: 8px;
+    min-width: 36px;
+    min-height: 36px;
+    cursor: pointer;
+    &:hover {
+      background-color: #F9F5FF;
+    }
+    &_active {
+      background-image: url("../images/icon/arrow-search.svg");
+      transform: rotate(-90deg);
+    }
+  }
+  &__button {
+    color: #101828;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 32px auto 60px;
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 280px;
+  }
+  @media (min-width: 700px) {
+    .show__button {
+      display: none;
+    }
+  }
+  &__items {
+    display: none;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #FFF;
+    margin: 32px 24px 60px;
+    max-width: 1216px;
+    border-radius: 12px;
+  }
+  @media (min-width: 700px) {
+    .show__items {
+      display: flex;
+    }
+  }
+  @media (min-width: 1200px) {
+    .show__items {
+      margin-top: 40px;
+      margin-bottom: 80px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    color: #98A2B3;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 8px 0 0;
+  }
+  &__item-button {
+    color: #101828;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    background-color: #FFF;
+    border: none;
+    border-radius: 8px;
+    min-width: 36px;
+    min-height: 36px;
+    cursor: pointer;
+    &:hover {
+      color: #7F56D9;
+      background-color: #F9F5FF;
+    }
+    &_active {
+      color: #FFF;
+      background-color: #7F56D9;
+      border: 1px solid #7F56D9;
+    }
+  }
+}

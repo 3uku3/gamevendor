@@ -1,8 +1,0 @@
-.faq__item {
-  list-style: none;
-  border-bottom: 1px solid #EAECF0;
-}
-
-.faq__item:last-of-type {
-  border-bottom: none;
-}
