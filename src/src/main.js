@@ -1,6 +1,4 @@
-import '../pages/index.css'
 import '../pages/index.scss'
-import '../index.html'
 
 const searchForm = document.querySelector(".search__form");
 const popup = document.querySelector(".popup");
